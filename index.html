@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>عزل أسطح وخزانات – منطقة عسير</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+  <!-- TikTok Pixel Code Start -->
+  <script>
+  !function (w, d, t) {
+    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+  var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+  ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+    ttq.load('D9FP5JBC77U79CKF8NDG');
+    ttq.page();
+  }(window, document, 'ttq');
+  </script>
+  <!-- TikTok Pixel Code End -->
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green: #25D366;
+      --green-dark: #1da551;
+      --blue: #1877F2;
+      --blue-dark: #1155c4;
+      --gold: #f5c518;
+      --dark: #0d1b2a;
+      --card-bg: #ffffff;
+      --accent: #0a5c7f;
+      --accent2: #0e8fa1;
+      --light: #f0f8ff;
+      --shadow: 0 8px 32px rgba(0,0,0,0.18);
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #0a5c7f 0%, #0e8fa1 40%, #1cb5cf 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 12px 80px;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before, body::after {
+      content: '';
+      position: fixed;
+      border-radius: 50%;
+      opacity: 0.12;
+      pointer-events: none;
+    }
+    body::before {
+      width: 420px; height: 420px;
+      background: #fff;
+      top: -120px; left: -100px;
+      animation: float1 8s ease-in-out infinite;
+    }
+    body::after {
+      width: 300px; height: 300px;
+      background: #fff;
+      bottom: -80px; right: -80px;
+      animation: float2 10s ease-in-out infinite;
+    }
+    @keyframes float1 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(30px)} }
+    @keyframes float2 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-20px)} }
+
+    /* ====== CARD ====== */
+    .card {
+      background: var(--card-bg);
+      border-radius: 28px;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+      animation: slideUp .7s cubic-bezier(.22,1,.36,1) both;
+    }
+    @keyframes slideUp {
+      from { opacity:0; transform:translateY(40px); }
+      to   { opacity:1; transform:translateY(0); }
+    }
+
+    /* ====== HEADER ====== */
+    .card-header {
+      background: linear-gradient(135deg, #0a5c7f, #1cb5cf);
+      padding: 32px 24px 24px;
+      text-align: center;
+      position: relative;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--gold);
+      color: #1a1a1a;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 4px 14px;
+      border-radius: 30px;
+      margin-bottom: 14px;
+      letter-spacing: .5px;
+    }
+    .logo-icon {
+      width: 72px; height: 72px;
+      background: rgba(255,255,255,0.15);
+      border: 3px solid rgba(255,255,255,0.4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 14px;
+      font-size: 34px;
+      backdrop-filter: blur(6px);
+    }
+    .card-header h1 {
+      color: #fff;
+      font-size: 22px;
+      font-weight: 900;
+      line-height: 1.4;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .card-header .sub {
+      color: rgba(255,255,255,0.85);
+      font-size: 13px;
+      margin-top: 6px;
+      font-weight: 600;
+    }
+
+    /* ====== DISCOUNT BANNER ====== */
+    .discount-banner {
+      background: linear-gradient(135deg, #c0392b, #e74c3c);
+      color: #fff;
+      text-align: center;
+      padding: 14px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .discount-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,0.04) 0px,
+        rgba(255,255,255,0.04) 10px,
+        transparent 10px,
+        transparent 20px
+      );
+    }
+    .discount-title {
+      font-size: 17px;
+      font-weight: 900;
+      letter-spacing: .3px;
+      position: relative;
+    }
+    .discount-title .flash { font-size: 20px; }
+    .discount-sub {
+      font-size: 12px;
+      font-weight: 600;
+      opacity: .9;
+      margin-top: 4px;
+      position: relative;
+    }
+    .countdown-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 8px;
+      position: relative;
+    }
+    .slot-box {
+      background: rgba(255,255,255,0.2);
+      border: 1.5px solid rgba(255,255,255,0.35);
+      border-radius: 8px;
+      padding: 4px 10px;
+      font-size: 13px;
+      font-weight: 900;
+      backdrop-filter: blur(4px);
+    }
+    .slot-label { font-size: 12px; opacity: .85; }
+
+    /* ====== OFFER RIBBON ====== */
+    .offer-ribbon {
+      background: linear-gradient(90deg, #f5c518, #ffa500);
+      color: #1a1a1a;
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 15px;
+      font-weight: 900;
+      letter-spacing: .3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .offer-ribbon span { font-size: 20px; }
+
+    /* ====== BODY ====== */
+    .card-body { padding: 24px 20px 20px; }
+
+    .city-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+      background: var(--light);
+      border-radius: 12px;
+      padding: 10px 14px;
+    }
+    .city-row .icon { font-size: 20px; }
+    .city-row p { font-size: 14px; font-weight: 700; color: var(--accent); }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: 900;
+      color: var(--accent);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent2), transparent);
+      border-radius: 2px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+    .service-item {
+      background: linear-gradient(135deg, #f0f8ff, #e3f4f8);
+      border: 1.5px solid rgba(14,143,161,0.15);
+      border-radius: 14px;
+      padding: 12px 10px;
+      text-align: center;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .service-item:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(14,143,161,0.15); }
+    .service-item .sicon { font-size: 26px; margin-bottom: 6px; }
+    .service-item p { font-size: 12px; font-weight: 700; color: var(--dark); line-height: 1.4; }
+
+    .features-list { list-style: none; margin-bottom: 22px; }
+    .features-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 12px;
+      border-radius: 10px;
+      margin-bottom: 7px;
+      background: #f9f9f9;
+      font-size: 13px;
+      font-weight: 600;
+      color: #222;
+      transition: background .2s;
+    }
+    .features-list li:hover { background: #eaf7fb; }
+    .check {
+      width: 22px; height: 22px;
+      background: linear-gradient(135deg, #0a5c7f, #1cb5cf);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #fff;
+      font-size: 12px;
+    }
+
+    .cta-wrap { display: flex; gap: 10px; }
+    .btn-call, .btn-wa {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 14px 10px;
+      border-radius: 14px;
+      font-family: 'Cairo', sans-serif;
+      font-size: 14px;
+      font-weight: 900;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: transform .18s, box-shadow .18s;
+    }
+    .btn-call:hover, .btn-wa:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.18); }
+    .btn-call { background: linear-gradient(135deg, #1877F2, #0a4dbf); color: #fff; }
+    .btn-wa   { background: linear-gradient(135deg, #25D366, #1a9d4a); color: #fff; }
+
+    /* ====== FLOATING SIDE BUTTONS ====== */
+    .float-buttons {
+      position: fixed;
+      left: 14px;
+      bottom: 90px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 999;
+    }
+    .float-btn {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 22px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+      transition: transform .2s, box-shadow .2s;
+      position: relative;
+    }
+    .float-btn:hover { transform: scale(1.12); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+    .float-btn.wa   { background: linear-gradient(135deg, #25D366, #1a9d4a); }
+    .float-btn.call { background: linear-gradient(135deg, #1877F2, #0a4dbf); }
+    .float-btn .pulse {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      animation: pulse 2s ease-out infinite;
+    }
+    .float-btn.wa .pulse   { background: rgba(37,211,102,0.4); }
+    .float-btn.call .pulse { background: rgba(24,119,242,0.4); }
+    @keyframes pulse {
+      0%   { transform: scale(1);    opacity: .7; }
+      100% { transform: scale(1.65); opacity: 0;  }
+    }
+
+    /* ====== FOOTER ====== */
+    .card-footer {
+      background: #f8f8f8;
+      border-top: 1px solid #eee;
+      padding: 14px 20px;
+      text-align: center;
+    }
+    .designer-line { font-size: 11px; color: #777; font-weight: 600; }
+    .designer-line a { color: var(--green-dark); text-decoration: none; font-weight: 900; }
+    .copyright { font-size: 11px; color: #aaa; margin-top: 4px; }
+
+    /* ====== PIXEL TOAST ====== */
+    #pixel-toast {
+      position: fixed;
+      top: 18px;
+      left: 50%;
+      transform: translateX(-50%) translateY(-80px);
+      background: #1a1a2e;
+      color: #fff;
+      border-radius: 14px;
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+      z-index: 9999;
+      transition: transform .4s cubic-bezier(.22,1,.36,1), opacity .4s;
+      opacity: 0;
+      white-space: nowrap;
+    }
+    #pixel-toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+    .toast-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: #25f4ee;
+      box-shadow: 0 0 8px #25f4ee;
+      flex-shrink: 0;
+      animation: blink 1s ease-in-out infinite;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+    .toast-tiktok { font-size: 16px; }
+  </style>
+</head>
+<body>
+
+  <!-- TikTok Pixel Toast -->
+  <div id="pixel-toast">
+    <span class="toast-tiktok">&#x1F3B5;</span>
+    <span class="toast-dot"></span>
+    <span id="toast-msg">TikTok Pixel — تم إرسال حدث Contact ✓</span>
+  </div>
+
+  <!-- Floating Side Buttons -->
+  <div class="float-buttons">
+    <a class="float-btn wa contact-trigger" href="https://wa.me/966566871427" target="_blank" title="واتساب" data-type="WhatsApp">
+      <span class="pulse"></span>
+      <svg width="26" height="26" viewBox="0 0 32 32" fill="white"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.48.67 4.8 1.83 6.8L2 30l7.43-1.8A13.93 13.93 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm0 25.5a11.44 11.44 0 01-5.8-1.57l-.42-.25-4.4 1.07 1.1-4.27-.28-.44A11.44 11.44 0 014.5 16C4.5 9.65 9.65 4.5 16 4.5S27.5 9.65 27.5 16 22.35 27.5 16 27.5zm6.28-8.6c-.34-.17-2.02-1-2.33-1.11-.32-.12-.55-.17-.78.17-.23.34-.9 1.11-1.1 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.7-2.01-1.9-2.35-.2-.34-.02-.52.15-.69.16-.16.34-.4.51-.6.17-.2.23-.34.34-.57.12-.23.06-.43-.03-.6-.09-.17-.78-1.88-1.07-2.57-.28-.67-.57-.58-.78-.59h-.66c-.23 0-.6.09-.91.43-.32.34-1.2 1.17-1.2 2.85s1.23 3.3 1.4 3.53c.17.23 2.42 3.7 5.86 5.19.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.82 2.31-1.62.28-.8.28-1.48.2-1.62-.08-.14-.31-.22-.65-.4z"/></svg>
+    </a>
+    <a class="float-btn call contact-trigger" href="tel:+966566871427" title="اتصال" data-type="Call">
+      <span class="pulse"></span>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
+    </a>
+  </div>
+
+  <!-- Main Card -->
+  <div class="card">
+
+    <!-- Header -->
+    <div class="card-header">
+      <div class="badge">⭐ خدمة احترافية معتمدة</div>
+      <div class="logo-icon">🏗️</div>
+      <h1>عزل أسطح وخزانات<br>مياه</h1>
+      <p class="sub">جودة عالية · ضمان طويل الأمد</p>
+    </div>
+
+    <!-- Discount Banner – first 10 callers -->
+    <div class="discount-banner">
+      <div class="discount-title">
+        <span class="flash">⚡</span>
+        خصم خاص لأول 10 متصلين فقط!
+        <span class="flash">⚡</span>
+      </div>
+      <div class="discount-sub">احجز الآن واستفد من العرض قبل نفاد المقاعد</div>
+      <div class="countdown-row">
+        <span class="slot-label">المقاعد المتبقية:</span>
+        <span class="slot-box" id="slotsLeft">10</span>
+        <span class="slot-label">من أصل 10</span>
+      </div>
+    </div>
+
+    <!-- Offer Ribbon -->
+    <div class="offer-ribbon">
+      <span>🔥</span>
+      أسعار تنافسية + استشارة مجانية
+      <span>🔥</span>
+    </div>
+
+    <!-- Body -->
+    <div class="card-body">
+
+      <!-- City -->
+      <div class="city-row">
+        <span class="icon">📍</span>
+        <p>نخدمك في منطقة <strong>عسير</strong> وجميع المناطق المجاورة</p>
+      </div>
+
+      <!-- Services -->
+      <div class="section-title">🔧 خدماتنا</div>
+      <div class="services-grid">
+        <div class="service-item">
+          <div class="sicon">🏠</div>
+          <p>عزل أسطح المنازل</p>
+        </div>
+        <div class="service-item">
+          <div class="sicon">🛢️</div>
+          <p>عزل خزانات المياه</p>
+        </div>
+        <div class="service-item">
+          <div class="sicon">🧱</div>
+          <p>عزل حراري وصوتي</p>
+        </div>
+        <div class="service-item">
+          <div class="sicon">💧</div>
+          <p>عزل مائي ضد التسريب</p>
+        </div>
+        <div class="service-item">
+          <div class="sicon">🏗️</div>
+          <p>عزل الفيلات والعمائر</p>
+        </div>
+        <div class="service-item">
+          <div class="sicon">🔍</div>
+          <p>كشف التسربات</p>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="section-title">✅ مميزاتنا</div>
+      <ul class="features-list">
+        <li><span class="check">✓</span> خبرة أكثر من 10 سنوات في مجال العزل</li>
+        <li><span class="check">✓</span> مواد عزل عالية الجودة ومعتمدة</li>
+        <li><span class="check">✓</span> فريق متخصص ومدرّب</li>
+        <li><span class="check">✓</span> ضمان على جميع الأعمال</li>
+        <li><span class="check">✓</span> أسعار تنافسية وعروض مميزة</li>
+        <li><span class="check">✓</span> تنفيذ سريع والتزام بالمواعيد</li>
+      </ul>
+
+      <!-- CTA Buttons -->
+      <div class="cta-wrap">
+        <a class="btn-call contact-trigger" href="tel:+966566871427" data-type="Call">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
+          اتصل الآن
+        </a>
+        <a class="btn-wa contact-trigger" href="https://wa.me/966566871427" target="_blank" data-type="WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 32 32" fill="white"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.48.67 4.8 1.83 6.8L2 30l7.43-1.8A13.93 13.93 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.28 18.9c-.34-.17-2.02-1-2.33-1.11-.32-.12-.55-.17-.78.17-.23.34-.9 1.11-1.1 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.7-2.01-1.9-2.35-.2-.34-.02-.52.15-.69.16-.16.34-.4.51-.6.17-.2.23-.34.34-.57.12-.23.06-.43-.03-.6-.09-.17-.78-1.88-1.07-2.57-.28-.67-.57-.58-.78-.59h-.66c-.23 0-.6.09-.91.43-.32.34-1.2 1.17-1.2 2.85s1.23 3.3 1.4 3.53c.17.23 2.42 3.7 5.86 5.19.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.82 2.31-1.62.28-.8.28-1.48.2-1.62-.08-.14-.31-.22-.65-.4z"/></svg>
+          واتساب
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="card-footer">
+      <p class="designer-line">
+        تم التصميم بواسطة
+        <a href="https://wa.me/201029095046" target="_blank">م. نجوي إبراهيم</a>
+      </p>
+      <p class="copyright">جميع الحقوق محفوظة © 2025</p>
+    </div>
+
+  </div>
+
+  <script>
+    // ── Toast helper ─────────────────────────────────────────────────────────
+    var toastTimer;
+    function showPixelToast(type) {
+      var toast   = document.getElementById('pixel-toast');
+      var msgEl   = document.getElementById('toast-msg');
+      var label   = type === 'WhatsApp' ? 'واتساب 💬' : 'اتصال 📞';
+      msgEl.textContent = '✓ TikTok Pixel — Contact (' + label + ')';
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(function() { toast.classList.remove('show'); }, 3500);
+    }
+
+    // ── TikTok Contact event on every CTA click ──────────────────────────────
+    document.querySelectorAll('.contact-trigger').forEach(function(el) {
+      el.addEventListener('click', function() {
+        var type = this.getAttribute('data-type') || 'Contact';
+        if (window.ttq) {
+          ttq.track('Contact', {
+            content_name: 'عزل أسطح وخزانات – عسير',
+            content_category: type
+          });
+        }
+        showPixelToast(type);
+      });
+    });
+
+    // ── Slots counter (session-based, resets on reload – purely cosmetic) ───
+    var TOTAL_SLOTS = 10;
+    var storageKey  = 'ezl_slots';
+    var slots = parseInt(sessionStorage.getItem(storageKey) || TOTAL_SLOTS, 10);
+    if (isNaN(slots) || slots < 1) slots = 1;
+
+    var slotEl = document.getElementById('slotsLeft');
+    if (slotEl) slotEl.textContent = slots;
+
+    // Decrease by 1 each time a CTA is clicked (min 1 so it never shows 0)
+    document.querySelectorAll('.contact-trigger').forEach(function(el) {
+      el.addEventListener('click', function() {
+        if (slots > 1) {
+          slots--;
+          sessionStorage.setItem(storageKey, slots);
+          if (slotEl) slotEl.textContent = slots;
+        }
+      });
+    });
+
+    // Touch polish
+    document.querySelectorAll('.btn-call, .btn-wa, .float-btn').forEach(function(btn) {
+      btn.addEventListener('touchstart', function() {}, { passive: true });
+    });
+  </script>
+</body>
+</html>
